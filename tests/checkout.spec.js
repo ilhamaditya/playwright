@@ -16,7 +16,8 @@ test('Login', async ({ page, context}) => {
     await (newTab[1]).locator('.container-step.relative:nth-child(1) form.w-full:nth-child(3) div.relative > input.py-4.px-5.border.w-full.bg-transparent.outline-none.mt-5').fill('!Password01')
     await (newTab[1]).locator('.btn-submit.py-3.w-full.mt-7.text-center.font-semibold.text-sm').click()
     await (newTab[1]).locator('.cart-dropdown-trigger > img:nth-child(1)').click()
-    await (newTab[1]).waitForTimeout(3000)
-
-
+    
+    // checkout
+    await (newTab[1]).locator('.cart-dropdown div.dropdown-box-actions > a.dropdown-box-button.secondary').click()
+    await (newTab[1]).locator('.sidebar-box-items.ringkasan:nth-child(3) > button.button.primary').click()
 });

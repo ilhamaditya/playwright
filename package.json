@@ -6,7 +6,7 @@
   "scripts": {
     "head": "npx playwright test --project=chromium --headed",
     "headless": "npx playwright test --project=chromium",
-    "debug": "npx playwright test --project=chromium ./tests/login.spec.js --headed --debug"
+    "debug": "npx playwright test --project=chromium --headed --debug"
   },
   "keywords": [],
   "author": "",
